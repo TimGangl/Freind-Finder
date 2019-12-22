@@ -20,6 +20,7 @@
   "homepage": "https://github.com/TimGangl/Freind-Finder#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "routes": "^2.1.0"
   }
 }
