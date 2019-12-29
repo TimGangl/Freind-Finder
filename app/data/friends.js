@@ -1,7 +1,7 @@
 var friends = [
   {
     name: "John Q Anyman",
-    photo: "should be a photo here",
+    photo: "https://i.pinimg.com/236x/77/7b/cf/777bcf5d3618cadf85ec15c8012317f5--ugly-men-funny-faces.jpg",
     scores: [
       '4',
       '3',
@@ -17,7 +17,7 @@ var friends = [
   },
   {
     name: "Jane Q Anywoman",
-    photo: "should be a photo here",
+    photo: "http://1.bp.blogspot.com/-7m6qXj_WiNc/UBEqAFcHlQI/AAAAAAAJSaQ/Xml3p5pHLl8/s1600/funny+pictures+of+woman+%284%29.jpg",
     scores: [
       '2',
       '1',
@@ -33,7 +33,7 @@ var friends = [
   },
   {
     name: "The Dude",
-    photo: "should be a photo here",
+    photo: "https://d1t80wr11ktjcz.cloudfront.net/wp-content/uploads/2019/01/the-big-lebowski-the-dude-couch-900x474.jpg",
     scores: [
       '1',
       '1',
@@ -49,7 +49,7 @@ var friends = [
   },
   {
     name: "The Dudette",
-    photo: "should be a photo here",
+    photo: "https://i.imgur.com/kRUGEc4.jpg",
     scores: [
       '2',
       '3',

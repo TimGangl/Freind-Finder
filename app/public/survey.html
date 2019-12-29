@@ -10,11 +10,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-</head>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
-<link id="avast_os_ext_custom_font" href="chrome-extension://eofcbnmajmjmplflapaojjnihcjkigck/common/ui/fonts/fonts.css"
-  rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
 </head>
 
 <body style="background-color: grey;" data--gr-c-s-loaded="true">
@@ -30,329 +26,334 @@
       <h4>Link to Photo Image (Required)</h4>
       <input type="text" id="photo" class="form-control" required>
       <hr>
-      <div id="q1">
-        <h3>
-          <strong style="color: #0275d8;">Question 1</strong>
-        </h3>
-        <h4>You enjoy outdoor activities</h4>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline1-1" name="customRadioInline1" class="custom-control-input"
-            value="option1">
-          <label class="custom-control-label" for="customRadioInline1-1">1 (Disagree)</label>
+      <!--Questions form-->
+      <form id="form">
+        <div id="q1">
+          <h3>
+            <strong style="color: #0275d8;">Question 1</strong>
+          </h3>
+          <h4>You enjoy outdoor activities</h4>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline1-1" name="customRadioInline1" class="custom-control-input"
+              value="1">
+            <label class="custom-control-label" for="customRadioInline1-1">1 (Disagree)</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline1-2" name="customRadioInline1" class="custom-control-input"
+              value="2">
+            <label class="custom-control-label" for="customRadioInline1-2">2</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline1-3" name="customRadioInline1" class="custom-control-input"
+              value="3">
+            <label class="custom-control-label" for="customRadioInline1-3">3</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline1-4" name="customRadioInline1" class="custom-control-input"
+              value="4">
+            <label class="custom-control-label" for="customRadioInline1-4">4</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline1-5" name="customRadioInline1" class="custom-control-input"
+              value="5">
+            <label class="custom-control-label" for="customRadioInline1-5">5 (Agree)</label>
+          </div>
         </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline1-2" name="customRadioInline1" class="custom-control-input"
-            value="option2">
-          <label class="custom-control-label" for="customRadioInline1-2">2</label>
+        <br>
+        <div id="q2">
+          <h3>
+            <strong style="color: #0275d8;">Question 2</strong>
+          </h3>
+          <h4>You are comfortable talking in front of large crowds.</h4>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline2-1" name="customRadioInline2" class="custom-control-input"
+              value="1">
+            <label class="custom-control-label" for="customRadioInline2-1">1 (Disagree)</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline2-2" name="customRadioInline2" class="custom-control-input"
+              value="2">
+            <label class="custom-control-label" for="customRadioInline2-2">2</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline2-3" name="customRadioInline2" class="custom-control-input"
+              value="3">
+            <label class="custom-control-label" for="customRadioInline2-3">3</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline2-4" name="customRadioInline2" class="custom-control-input"
+              value="4">
+            <label class="custom-control-label" for="customRadioInline2-4">4</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline2-5" name="customRadioInline2" class="custom-control-input"
+              value="5">
+            <label class="custom-control-label" for="customRadioInline2-5">5 (Agree)</label>
+          </div>
         </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline1-3" name="customRadioInline1" class="custom-control-input"
-            value="option3">
-          <label class="custom-control-label" for="customRadioInline1-3">3</label>
+        <br>
+        <div id="q3">
+          <h3>
+            <strong style="color: #0275d8;">Question 3</strong>
+          </h3>
+          <h4>You are not afraid to get down dirty to reach your goals.</h4>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline3-1" name="customRadioInline3" class="custom-control-input"
+              value="1">
+            <label class="custom-control-label" for="customRadioInline3-1">1 (Disagree)</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline3-2" name="customRadioInline3" class="custom-control-input"
+              value="2">
+            <label class="custom-control-label" for="customRadioInline3-2">2</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline3-3" name="customRadioInline3" class="custom-control-input"
+              value="3">
+            <label class="custom-control-label" for="customRadioInline3-3">3</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline3-4" name="customRadioInline3" class="custom-control-input"
+              value="4">
+            <label class="custom-control-label" for="customRadioInline3-4">4</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline3-5" name="customRadioInline3" class="custom-control-input"
+              value="5">
+            <label class="custom-control-label" for="customRadioInline3-5">5 (Agree)</label>
+          </div>
         </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline1-4" name="customRadioInline1" class="custom-control-input"
-            value="option4">
-          <label class="custom-control-label" for="customRadioInline1-4">4</label>
+        <br>
+        <div id="q4">
+          <h3>
+            <strong style="color: #0275d8;">Question 4</strong>
+          </h3>
+          <h4>You like to obtain material items over experiences.</h4>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline4-1" name="customRadioInline4" class="custom-control-input"
+              value="1">
+            <label class="custom-control-label" for="customRadioInline4-1">1 (Disagree)</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline4-2" name="customRadioInline4" class="custom-control-input"
+              value="2">
+            <label class="custom-control-label" for="customRadioInline4-2">2</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline4-3" name="customRadioInline4" class="custom-control-input"
+              value="3">
+            <label class="custom-control-label" for="customRadioInline4-3">3</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline4-4" name="customRadioInline4" class="custom-control-input"
+              value="4">
+            <label class="custom-control-label" for="customRadioInline4-4">4</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline4-5" name="customRadioInline4" class="custom-control-input"
+              value="5">
+            <label class="custom-control-label" for="customRadioInline4-5">5 (Agree)</label>
+          </div>
         </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline1-5" name="customRadioInline1" class="custom-control-input"
-            value="option5">
-          <label class="custom-control-label" for="customRadioInline1-5">5 (Agree)</label>
+        <br>
+        <div id="q5">
+          <h3>
+            <strong style="color: #0275d8;">Question 5</strong>
+          </h3>
+          <h4>You like to spend the night hanging out with friends.</h4>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline5-1" name="customRadioInline5" class="custom-control-input"
+              value="1">
+            <label class="custom-control-label" for="customRadioInline5-1">1 (Disagree)</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline5-2" name="customRadioInline5" class="custom-control-input"
+              value="2">
+            <label class="custom-control-label" for="customRadioInline5-2">2</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline5-3" name="customRadioInline5" class="custom-control-input"
+              value="3">
+            <label class="custom-control-label" for="customRadioInline5-3">3</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline5-4" name="customRadioInline5" class="custom-control-input"
+              value="4">
+            <label class="custom-control-label" for="customRadioInline5-4">4</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline5-5" name="customRadioInline5" class="custom-control-input"
+              value="5">
+            <label class="custom-control-label" for="customRadioInline5-5">5 (Agree)</label>
+          </div>
         </div>
-      </div>
-      <br>
-      <div id="q2">
-        <h3>
-          <strong style="color: #0275d8;">Question 2</strong>
-        </h3>
-        <h4>You are comfortable talking in front of large crowds.</h4>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline2-1" name="customRadioInline2" class="custom-control-input"
-            value="option1">
-          <label class="custom-control-label" for="customRadioInline2-1">1 (Disagree)</label>
+        <br>
+        <div id="q6">
+          <h3>
+            <strong style="color: #0275d8;">Question 6</strong>
+          </h3>
+          <h4> You like to dress nice for everyday situations.</h4>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline6-1" name="customRadioInline6" class="custom-control-input"
+              value="1">
+            <label class="custom-control-label" for="customRadioInline6-1">1 (Disagree)</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline6-2" name="customRadioInline6" class="custom-control-input"
+              value="option2">
+            <label class="custom-control-label" for="customRadioInline6-2">2</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline6-3" name="customRadioInline6" class="custom-control-input"
+              value="3">
+            <label class="custom-control-label" for="customRadioInline6-3">3</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline6-4" name="customRadioInline6" class="custom-control-input"
+              value="4">
+            <label class="custom-control-label" for="customRadioInline6-4">4</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline6-5" name="customRadioInline6" class="custom-control-input"
+              value="5">
+            <label class="custom-control-label" for="customRadioInline6-5">5 (Agree)</label>
+          </div>
         </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline2-2" name="customRadioInline2" class="custom-control-input"
-            value="option2">
-          <label class="custom-control-label" for="customRadioInline2-2">2</label>
+        <br>
+        <div id="q7">
+          <h3>
+            <strong style="color: #0275d8;">Question 7</strong>
+          </h3>
+          <h4>You don't mind when other people do the talking.</h4>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline7-1" name="customRadioInline7" class="custom-control-input"
+              value="1">
+            <label class="custom-control-label" for="customRadioInline7-1">1 (Disagree)</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline7-2" name="customRadioInline7" class="custom-control-input"
+              value="2">
+            <label class="custom-control-label" for="customRadioInline7-2">2</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline7-3" name="customRadioInline7" class="custom-control-input"
+              value="3">
+            <label class="custom-control-label" for="customRadioInline7-3">3</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline7-4" name="customRadioInline7" class="custom-control-input"
+              value="4">
+            <label class="custom-control-label" for="customRadioInline7-4">4</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline7-5" name="customRadioInline7" class="custom-control-input"
+              value="5">
+            <label class="custom-control-label" for="customRadioInline7-5">5 (Agree)</label>
+          </div>
         </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline2-3" name="customRadioInline2" class="custom-control-input"
-            value="option3">
-          <label class="custom-control-label" for="customRadioInline2-3">3</label>
+        <br>
+        <div id="q8">
+          <h3>
+            <strong style="color: #0275d8;">Question 8</strong>
+          </h3>
+          <h4>You like traveling around the world.</h4>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline8-1" name="customRadioInline8" class="custom-control-input"
+              value="1">
+            <label class="custom-control-label" for="customRadioInline8-1">1 (Disagree)</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline8-2" name="customRadioInline8" class="custom-control-input"
+              value="2">
+            <label class="custom-control-label" for="customRadioInline8-2">2</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline8-3" name="customRadioInline8" class="custom-control-input"
+              value="3">
+            <label class="custom-control-label" for="customRadioInline8-3">3</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline8-4" name="customRadioInline8" class="custom-control-input"
+              value="4">
+            <label class="custom-control-label" for="customRadioInline8-4">4</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline8-5" name="customRadioInline8" class="custom-control-input"
+              value="5">
+            <label class="custom-control-label" for="customRadioInline8-5">5 (Agree)</label>
+          </div>
         </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline2-4" name="customRadioInline2" class="custom-control-input"
-            value="option4">
-          <label class="custom-control-label" for="customRadioInline2-4">4</label>
+        <br>
+        <div id="q9">
+          <h3>
+            <strong style="color: #0275d8;">Question 9</strong>
+          </h3>
+          <h4>You like to keep in touch with your friends.</h4>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline9-1" name="customRadioInline9" class="custom-control-input"
+              value="1">
+            <label class="custom-control-label" for="customRadioInline9-1">1 (Disagree)</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline9-2" name="customRadioInline9" class="custom-control-input"
+              value="2">
+            <label class="custom-control-label" for="customRadioInline9-2">2</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline9-3" name="customRadioInline9" class="custom-control-input"
+              value="3">
+            <label class="custom-control-label" for="customRadioInline9-3">3</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline9-4" name="customRadioInline9" class="custom-control-input"
+              value="4">
+            <label class="custom-control-label" for="customRadioInline9-4">4</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline9-5" name="customRadioInline9" class="custom-control-input"
+              value="5">
+            <label class="custom-control-label" for="customRadioInline9-5">5 (Agree)</label>
+          </div>
         </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline2-5" name="customRadioInline2" class="custom-control-input"
-            value="option5">
-          <label class="custom-control-label" for="customRadioInline2-5">5 (Agree)</label>
+        <br>
+        <div id="q10">
+          <h3>
+            <strong style="color:#0275d8;">Question 10</strong>
+          </h3>
+          <h4>You feel more energetic after spending time with a group of friends.</h4>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline10-1" name="customRadioInline10" class="custom-control-input"
+              value="1">
+            <label class="custom-control-label" for="customRadioInline10-1">1 (Disagree)</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline10-2" name="customRadioInline10" class="custom-control-input"
+              value="2">
+            <label class="custom-control-label" for="customRadioInline10-2">2</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline10-3" name="customRadioInline10" class="custom-control-input"
+              value="3">
+            <label class="custom-control-label" for="customRadioInline10-3">3</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline10-4" name="customRadioInline10" class="custom-control-input"
+              value="4">
+            <label class="custom-control-label" for="customRadioInline10-4">4</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline10-5" name="customRadioInline10" class="custom-control-input"
+              value="5">
+            <label class="custom-control-label" for="customRadioInline10-5">5 (Agree)</label>
+          </div>
         </div>
-      </div>
-      <br>
-      <div id="q3">
-        <h3>
-          <strong style="color: #0275d8;">Question 3</strong>
-        </h3>
-        <h4>You are not afraid to get down dirty to reach your goals.</h4>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline3-1" name="customRadioInline3" class="custom-control-input"
-            value="option1">
-          <label class="custom-control-label" for="customRadioInline3-1">1 (Disagree)</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline3-2" name="customRadioInline3" class="custom-control-input"
-            value="option2">
-          <label class="custom-control-label" for="customRadioInline3-2">2</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline3-3" name="customRadioInline3" class="custom-control-input"
-            value="option3">
-          <label class="custom-control-label" for="customRadioInline3-3">3</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline3-4" name="customRadioInline3" class="custom-control-input"
-            value="option4">
-          <label class="custom-control-label" for="customRadioInline3-4">4</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline3-5" name="customRadioInline3" class="custom-control-input"
-            value="option5">
-          <label class="custom-control-label" for="customRadioInline3-5">5 (Agree)</label>
-        </div>
-      </div>
-      <br>
-      <div id="q4">
-        <h3>
-          <strong style="color: #0275d8;">Question 4</strong>
-        </h3>
-        <h4>You like to obtain material items over experiences.</h4>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline4-1" name="customRadioInline4" class="custom-control-input"
-            value="option1">
-          <label class="custom-control-label" for="customRadioInline4-1">1 (Disagree)</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline4-2" name="customRadioInline4" class="custom-control-input"
-            value="option2">
-          <label class="custom-control-label" for="customRadioInline4-2">2</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline4-3" name="customRadioInline4" class="custom-control-input"
-            value="option3">
-          <label class="custom-control-label" for="customRadioInline4-3">3</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline4-4" name="customRadioInline4" class="custom-control-input"
-            value="option4">
-          <label class="custom-control-label" for="customRadioInline4-4">4</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline4-5" name="customRadioInline4" class="custom-control-input"
-            value="option5">
-          <label class="custom-control-label" for="customRadioInline4-5">5 (Agree)</label>
-        </div>
-      </div>
-      <br>
-      <div id="q5">
-        <h3>
-          <strong style="color: #0275d8;">Question 5</strong>
-        </h3>
-        <h4>You like to spend the night hanging out with friends.</h4>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline5-1" name="customRadioInline5" class="custom-control-input"
-            value="option1">
-          <label class="custom-control-label" for="customRadioInline5-1">1 (Disagree)</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline5-2" name="customRadioInline5" class="custom-control-input"
-            value="option2">
-          <label class="custom-control-label" for="customRadioInline5-2">2</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline5-3" name="customRadioInline5" class="custom-control-input"
-            value="option3">
-          <label class="custom-control-label" for="customRadioInline5-3">3</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline5-4" name="customRadioInline5" class="custom-control-input"
-            value="option4">
-          <label class="custom-control-label" for="customRadioInline5-4">4</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline5-5" name="customRadioInline5" class="custom-control-input"
-            value="option5">
-          <label class="custom-control-label" for="customRadioInline5-5">5 (Agree)</label>
-        </div>
-      </div>
-      <br>
-      <div id="q6">
-        <h3>
-          <strong style="color: #0275d8;">Question 6</strong>
-        </h3>
-        <h4> You like to dress nice for everyday situations.</h4>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline6-1" name="customRadioInline6" class="custom-control-input"
-            value="option1">
-          <label class="custom-control-label" for="customRadioInline6-1">1 (Disagree)</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline6-2" name="customRadioInline6" class="custom-control-input"
-            value="option2">
-          <label class="custom-control-label" for="customRadioInline6-2">2</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline6-3" name="customRadioInline6" class="custom-control-input"
-            value="option3">
-          <label class="custom-control-label" for="customRadioInline6-3">3</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline6-4" name="customRadioInline6" class="custom-control-input"
-            value="option4">
-          <label class="custom-control-label" for="customRadioInline6-4">4</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline6-5" name="customRadioInline6" class="custom-control-input"
-            value="option5">
-          <label class="custom-control-label" for="customRadioInline6-5">5 (Agree)</label>
-        </div>
-      </div>
-      <br>
-      <div id="q7">
-        <h3>
-          <strong style="color: #0275d8;">Question 7</strong>
-        </h3>
-        <h4>You don't mind when other people do the talking.</h4>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline7-1" name="customRadioInline7" class="custom-control-input"
-            value="option1">
-          <label class="custom-control-label" for="customRadioInline7-1">1 (Disagree)</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline7-2" name="customRadioInline7" class="custom-control-input"
-            value="option2">
-          <label class="custom-control-label" for="customRadioInline7-2">2</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline7-3" name="customRadioInline7" class="custom-control-input"
-            value="option3">
-          <label class="custom-control-label" for="customRadioInline7-3">3</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline7-4" name="customRadioInline7" class="custom-control-input"
-            value="optioin4">
-          <label class="custom-control-label" for="customRadioInline7-4">4</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline7-5" name="customRadioInline7" class="custom-control-input"
-            value="option5">
-          <label class="custom-control-label" for="customRadioInline7-5">5 (Agree)</label>
-        </div>
-      </div>
-      <br>
-      <div id="q8">
-        <h3>
-          <strong style="color: #0275d8;">Question 8</strong>
-        </h3>
-        <h4>You like traveling around the world.</h4>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline8-1" name="customRadioInline8" class="custom-control-input"
-            value="option1">
-          <label class="custom-control-label" for="customRadioInline8-1">1 (Disagree)</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline8-2" name="customRadioInline8" class="custom-control-input"
-            value="option2">
-          <label class="custom-control-label" for="customRadioInline8-2">2</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline8-3" name="customRadioInline8" class="custom-control-input"
-            value="option3">
-          <label class="custom-control-label" for="customRadioInline8-3">3</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline8-4" name="customRadioInline8" class="custom-control-input"
-            value="option4">
-          <label class="custom-control-label" for="customRadioInline8-4">4</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline8-5" name="customRadioInline8" class="custom-control-input"
-            value="option5">
-          <label class="custom-control-label" for="customRadioInline8-5">5 (Agree)</label>
-        </div>
-      </div>
-      <br>
-      <div id="q9">
-        <h3>
-          <strong style="color: #0275d8;">Question 9</strong>
-        </h3>
-        <h4>You like to keep in touch with your friends.</h4>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline9-1" name="customRadioInline9" class="custom-control-input"
-            value="option1">
-          <label class="custom-control-label" for="customRadioInline9-1">1 (Disagree)</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline9-2" name="customRadioInline9" class="custom-control-input"
-            value="option2">
-          <label class="custom-control-label" for="customRadioInline9-2">2</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline9-3" name="customRadioInline9" class="custom-control-input"
-            value="option3">
-          <label class="custom-control-label" for="customRadioInline9-3">3</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline9-4" name="customRadioInline9" class="custom-control-input"
-            value="option4">
-          <label class="custom-control-label" for="customRadioInline9-4">4</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline9-5" name="customRadioInline9" class="custom-control-input"
-            value="option5">
-          <label class="custom-control-label" for="customRadioInline9-5">5 (Agree)</label>
-        </div>
-      </div>
-      <br>
-      <div id="q10">
-        <h3>
-          <strong style="color:#0275d8;">Question 10</strong>
-        </h3>
-        <h4>You feel more energetic after spending time with a group of friends.</h4>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline10-1" name="customRadioInline10" class="custom-control-input"
-            value="option1">
-          <label class="custom-control-label" for="customRadioInline10-1">1 (Disagree)</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline10-2" name="customRadioInline10" class="custom-control-input"
-            value="option2">
-          <label class="custom-control-label" for="customRadioInline10-2">2</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline10-3" name="customRadioInline10" class="custom-control-input"
-            value="option3">
-          <label class="custom-control-label" for="customRadioInline10-3">3</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline10-4" name="customRadioInline10" class="custom-control-input"
-            value="option4">
-          <label class="custom-control-label" for="customRadioInline10-4">4</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline10-5" name="customRadioInline10" class="custom-control-input"
-            value="option5">
-          <label class="custom-control-label" for="customRadioInline10-5">5 (Agree)</label>
-        </div>
-      </div>
+      </form>
     </div>
+    <!--submit button-->
     <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle"
         aria-hidden="true"></i>
       Submit</button>
+  </div>
   </div>
   <hr>
   <footer class="footer">
@@ -374,6 +375,47 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+
+  <!-- Modal Dialog Displaying Closest Friend Match -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Closest Friend Match</h4>
+      <div class="divider"></div>
+      <h5 id="userMatch"></h5>
+      <img id="userMatchImage" class="materialboxed" width="650" src="">
+    </div>
+    <div class="modal-footer">
+      <a href="/survey" class="modal-action modal-close waves-effect waves-green btn-flat">Fill Again!</a>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+
+    // Activate submit button
+    $('#submit').on('click', function (event) {
+      event.preventDefault();
+      // Gather user inputs
+      var userInput = {
+        name: $('#name').val().trim(),
+        photo: $('#photo').val().trim(),
+        scores: [
+          $('input[name=customRadioInline1]:checked').val(),
+          $('input[name=customRadioInline2]:checked').val(),
+          $('input[name=customRadioInline3]:checked').val(),
+          $('input[name=customRadioInline4]:checked').val(),
+          $('input[name=customRadioInline5]:checked').val(),
+          $('input[name=customRadioInline6]:checked').val(),
+          $('input[name=customRadioInline7]:checked').val(),
+          $('input[name=customRadioInline8]:checked').val(),
+          $('input[name=customRadioInline9]:checked').val(),
+          $('input[name=customRadioInline10]:checked').val()
+        ]
+      };
+      console.log(userInput);
+    });
+  </script>
+
+  </script>
 </body>
 
 </html>

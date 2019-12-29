@@ -1,5 +1,5 @@
 {
-  "name": "Freind-Finder",
+  "name": "Friend-Finder",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TimGangl/Freind-Finder.git"
+    "url": "git+https://github.com/TimGangl/Friend-Finder.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TimGangl/Freind-Finder/issues"
+    "url": "https://github.com/TimGangl/Friend-Finder/issues"
   },
-  "homepage": "https://github.com/TimGangl/Freind-Finder#readme",
+  "homepage": "https://github.com/TimGangl/Friend-Finder#readme",
   "dependencies": {
     "express": "^4.17.1",
     "path": "^0.12.7",
