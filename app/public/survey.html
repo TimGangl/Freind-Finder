@@ -200,7 +200,7 @@
           </div>
           <div class="custom-control custom-radio custom-control-inline">
             <input type="radio" id="customRadioInline6-2" name="customRadioInline6" class="custom-control-input"
-              value="option2">
+              value="2">
             <label class="custom-control-label" for="customRadioInline6-2">2</label>
           </div>
           <div class="custom-control custom-radio custom-control-inline">
@@ -362,13 +362,37 @@
         | <a href="https://github.com/TimGangl/Friend-Finder" style="color: ivory;">GitHub Repo</a></p>
     </div>
   </footer>
+  </div>
 
+  <div id="resultsModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">
+            &times;
+          </button>
+          <h2 style="width:600px;" class="modal-title"><strong>Best Match</strong></h2>
+        </div>
+
+        <div class="modal-body">
+          <h2 id="matchName"></h2>
+          <img id="matchImg" src="" alt="Placeholder image in case user pic doesn't show" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>-->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
@@ -376,44 +400,50 @@
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
 
-  <!-- Modal Dialog Displaying Closest Friend Match -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Closest Friend Match</h4>
-      <div class="divider"></div>
-      <h5 id="userMatch"></h5>
-      <img id="userMatchImage" class="materialboxed" width="650" src="">
-    </div>
-    <div class="modal-footer">
-      <a href="/survey" class="modal-action modal-close waves-effect waves-green btn-flat">Fill Again!</a>
-    </div>
-  </div>
-
   <script type="text/javascript">
-
     // Activate submit button
-    $('#submit').on('click', function (event) {
-      event.preventDefault();
-      // Gather user inputs
-      var userInput = {
-        name: $('#name').val().trim(),
-        photo: $('#photo').val().trim(),
-        scores: [
-          $('input[name=customRadioInline1]:checked').val(),
-          $('input[name=customRadioInline2]:checked').val(),
-          $('input[name=customRadioInline3]:checked').val(),
-          $('input[name=customRadioInline4]:checked').val(),
-          $('input[name=customRadioInline5]:checked').val(),
-          $('input[name=customRadioInline6]:checked').val(),
-          $('input[name=customRadioInline7]:checked').val(),
-          $('input[name=customRadioInline8]:checked').val(),
-          $('input[name=customRadioInline9]:checked').val(),
-          $('input[name=customRadioInline10]:checked').val()
-        ]
-      };
-      console.log(userInput);
+    $('#submit').on('click', function () {
+      function validateForm() {
+        var isValid = true;
+        $(".form-control").each(function () {
+          if ($(this).val() === "") isValid = false;
+        });
+        $(".custom-control-input").each(function () {
+          if ($(this).val() === "") isValid = false;
+        });
+        return isValid;
+      }
+      if (validateForm() === true) {
+
+        // Gather user inputs
+        var userData = {
+          name: $('#name').val().trim(),
+          photo: $('#photo').val().trim(),
+          scores: [
+            $('input[name=customRadioInline1]:checked').val(),
+            $('input[name=customRadioInline2]:checked').val(),
+            $('input[name=customRadioInline3]:checked').val(),
+            $('input[name=customRadioInline4]:checked').val(),
+            $('input[name=customRadioInline5]:checked').val(),
+            $('input[name=customRadioInline6]:checked').val(),
+            $('input[name=customRadioInline7]:checked').val(),
+            $('input[name=customRadioInline8]:checked').val(),
+            $('input[name=customRadioInline9]:checked').val(),
+            $('input[name=customRadioInline10]:checked').val()
+          ]
+        };
+        //var currentURL = window.location.origin;
+        $.post("/api/friends", userData, function (data) {
+          $("#matchName").text(data.name);
+          $("#matchImg").attr("src", data.photo);
+
+          $("#resultsModal").modal("toggle");
+        });
+      } else {
+        alert("Please fill out all the fields before submitting!");
+      }
+      return false;
     });
-  </script>
 
   </script>
 </body>
