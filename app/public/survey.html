@@ -376,7 +376,8 @@
 
         <div class="modal-body">
           <h2 id="matchName"></h2>
-          <img id="matchImg" src="" alt="Placeholder image in case user pic doesn't show" />
+          <img id="matchImg" style="max-width:500px;max-height:500px;" src=""
+            alt="Placeholder image in case user pic doesn't show" />
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal">
@@ -432,7 +433,6 @@
             $('input[name=customRadioInline10]:checked').val()
           ]
         };
-        //var currentURL = window.location.origin;
         $.post("/api/friends", userData, function (data) {
           $("#matchName").text(data.name);
           $("#matchImg").attr("src", data.photo);
