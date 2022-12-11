@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/TimGangl/Friend-Finder#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "parser": "^0.1.4",
     "path": "^0.12.7",
     "routes": "^2.1.0"
